@@ -1,15 +1,17 @@
 package Classes;
 
 public class Minion {
-    int mana;
-    int health;
-    int attackDamage;
-    String description;
-    String colors;
-    String name;
-    String type;
-    boolean tank;
-    boolean frozen;
+    public int mana;
+    public int health;
+    public int attackDamage;
+    public String description;
+    public String colors;
+    public String name;
+    public String type;
+    public boolean tank;
+    public boolean frozen;
+    public String specialAbility;
+
 
     public Minion(int mana, int health, int attackDamage, String description, String colors, String name) {
         this.mana = mana;
