@@ -7,6 +7,9 @@ public class Minion {
     String description;
     String colors;
     String name;
+    String type;
+    boolean tank;
+    boolean frozen;
 
     public Minion(int mana, int health, int attackDamage, String description, String colors, String name) {
         this.mana = mana;
