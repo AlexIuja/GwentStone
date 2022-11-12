@@ -10,4 +10,9 @@ public class TheRipper extends Minion {
         frozen = false;
         specialAbility = "Weak Knees";
     }
+
+    @Override
+    public void execSpecialAbility() {
+        //not implemented yet
+    }
 }

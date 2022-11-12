@@ -1,6 +1,6 @@
 package Classes.Minions;
 
-public class Minion {
+public abstract class Minion {
     public int mana;
     public int health;
     public int attackDamage;
@@ -21,4 +21,6 @@ public class Minion {
         this.colors = colors;
         this.name = name;
     }
+
+    public abstract void execSpecialAbility();
 }

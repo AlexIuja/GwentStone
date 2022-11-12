@@ -10,6 +10,10 @@ public class Sentinel extends Minion {
         frozen = false;
     }
 
+    @Override
+    public void execSpecialAbility() {
+        // this card doesn't have a special ability, so we leave this method empty
+    }
 
 
 }

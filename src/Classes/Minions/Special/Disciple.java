@@ -10,4 +10,9 @@ public class Disciple extends Minion {
         frozen = false;
         specialAbility = "God's Plan";
     }
+
+    @Override
+    public void execSpecialAbility() {
+        //not implemented yet
+    }
 }

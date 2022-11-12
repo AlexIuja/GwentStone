@@ -10,4 +10,9 @@ public class Miraj extends Minion {
         frozen = false;
         specialAbility = "Skyjack";
     }
+
+    @Override
+    public void execSpecialAbility() {
+        //not implemented yet
+    }
 }

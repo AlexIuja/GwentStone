@@ -10,4 +10,9 @@ public class TheCursedOne extends Minion {
         frozen = false;
         specialAbility = "Shapeshift";
     }
+
+    @Override
+    public void execSpecialAbility() {
+        //not implemented yet
+    }
 }
