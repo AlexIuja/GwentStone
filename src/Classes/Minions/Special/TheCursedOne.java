@@ -13,6 +13,6 @@ public class TheCursedOne extends Minion {
 
     @Override
     public void execSpecialAbility() {
-        //not implemented yet
+        //TODO
     }
 }
