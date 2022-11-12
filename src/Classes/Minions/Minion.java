@@ -1,4 +1,4 @@
-package Classes;
+package Classes.Minions;
 
 public class Minion {
     public int mana;

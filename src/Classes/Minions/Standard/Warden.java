@@ -1,6 +1,6 @@
-package Classes.Standard;
+package Classes.Minions.Standard;
 
-import Classes.Minion;
+import Classes.Minions.Minion;
 
 public class Warden extends Minion {
     public Warden(int mana, int health, int attackDamage, String description, String colors, String name) {

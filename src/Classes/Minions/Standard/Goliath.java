@@ -1,6 +1,6 @@
-package Classes.Standard;
+package Classes.Minions.Standard;
 
-import Classes.Minion;
+import Classes.Minions.Minion;
 
 public class Goliath extends Minion {
     public Goliath(int mana, int health, int attackDamage, String description, String colors, String name) {

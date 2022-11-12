@@ -1,6 +1,6 @@
-package Classes.Special;
+package Classes.Minions.Special;
 
-import Classes.Minion;
+import Classes.Minions.Minion;
 
 public class TheCursedOne extends Minion {
     public TheCursedOne(int mana, int health, String description, String colors, String name) {

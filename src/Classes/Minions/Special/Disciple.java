@@ -1,6 +1,6 @@
-package Classes.Special;
+package Classes.Minions.Special;
 
-import Classes.Minion;
+import Classes.Minions.Minion;
 
 public class Disciple extends Minion {
     public Disciple(int mana, int health, String description, String colors, String name) {

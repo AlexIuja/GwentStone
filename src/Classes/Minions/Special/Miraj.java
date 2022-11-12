@@ -1,6 +1,6 @@
-package Classes.Special;
+package Classes.Minions.Special;
 
-import Classes.Minion;
+import Classes.Minions.Minion;
 
 public class Miraj extends Minion {
     public Miraj(int mana, int health, int attackDamage, String description, String colors, String name) {
