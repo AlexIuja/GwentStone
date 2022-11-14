@@ -5,6 +5,10 @@ import Classes.Cards.Environment.Environment;
 import Classes.Cards.Environment.Firestorm;
 import Classes.Cards.Environment.HeartHound;
 import Classes.Cards.Environment.Winterfell;
+import Classes.Cards.Heroes.EmpressThorina;
+import Classes.Cards.Heroes.GeneralKocioraw;
+import Classes.Cards.Heroes.KingMudface;
+import Classes.Cards.Heroes.LordRoyce;
 import Classes.Cards.Minions.Minion;
 import Classes.Cards.Minions.Special.Disciple;
 import Classes.Cards.Minions.Special.Miraj;
@@ -23,6 +27,7 @@ public class TestClass {
         Card testCard = null;
         final String MinionString = "Disciple Miraj The Cursed One The Ripper Berserker Goliath Sentinel Warden";
         final String EnvironmentString = "Firestorm HeartHound Winterfell";
+        final String HeroesString = "Empress Thorina General Kocioraw King Mudface Lord Royce";
 
         Scanner input = new Scanner(System.in);
         String name = input.nextLine();
@@ -81,7 +86,29 @@ public class TestClass {
                     break;
             }
         }
+        if(HeroesString.contains(name)) {
+            int mana = input.nextInt();
+            input.nextLine();
+            String description = input.nextLine();
+            String col = input.nextLine();
+            String[] colours = col.split(" ");
+            switch(name) {
+                case "Empress Thorina":
+                    testCard = new EmpressThorina(mana, description, colours);
+                    break;
+                case "General Kocioraw":
+                    testCard = new GeneralKocioraw(mana, description, colours);
+                    break;
+                case "King Mudface":
+                    testCard = new KingMudface(mana, description, colours);
+                    break;
+                case "Lord Royce":
+                    testCard = new LordRoyce(mana, description, colours);
+                    break;
+            }
+        }
         System.out.println(testCard);
+
 
 
 

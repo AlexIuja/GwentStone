@@ -2,6 +2,8 @@ package Classes.Cards.Heroes;
 
 import Classes.Cards.Card;
 
+import java.util.Arrays;
+
 public abstract class Hero extends Card {
     public int mana;
     public String description;
@@ -16,4 +18,15 @@ public abstract class Hero extends Card {
     }
 
     public abstract void execAbility();
+
+    @Override
+    public String toString() {
+        return "Hero{" +
+                "mana=" + mana +
+                ", description='" + description + '\'' +
+                ", colors=" + Arrays.toString(colors) +
+                ", health=" + health +
+                ", alive=" + alive +
+                '}';
+    }
 }
