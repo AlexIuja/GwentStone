@@ -2,15 +2,15 @@ package Classes.Cards.Environment;
 
 import Classes.Cards.Card;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 
 public abstract class Environment extends Card {
     String name;
     int mana;
     String description;
-    String[] colors;
+    ArrayList<String> colors;
 
-    public Environment(String name, int mana, String description, String[] colors) {
+    public Environment(String name, int mana, String description, ArrayList<String> colors) {
         this.name = name;
         this.mana = mana;
         this.description = description;
@@ -23,7 +23,7 @@ public abstract class Environment extends Card {
                 "name='" + name + '\'' +
                 ", mana=" + mana +
                 ", description='" + description + '\'' +
-                ", colors=" + Arrays.toString(colors) +
+                ", colors=" + colors +
                 '}';
     }
 

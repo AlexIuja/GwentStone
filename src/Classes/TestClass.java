@@ -1,23 +1,10 @@
 package Classes;
 
 import Classes.Cards.Card;
-import Classes.Cards.Environment.Environment;
-import Classes.Cards.Environment.Firestorm;
-import Classes.Cards.Environment.HeartHound;
-import Classes.Cards.Environment.Winterfell;
 import Classes.Cards.Heroes.EmpressThorina;
 import Classes.Cards.Heroes.GeneralKocioraw;
 import Classes.Cards.Heroes.KingMudface;
 import Classes.Cards.Heroes.LordRoyce;
-import Classes.Cards.Minions.Minion;
-import Classes.Cards.Minions.Special.Disciple;
-import Classes.Cards.Minions.Special.Miraj;
-import Classes.Cards.Minions.Special.TheCursedOne;
-import Classes.Cards.Minions.Special.TheRipper;
-import Classes.Cards.Minions.Standard.Berserker;
-import Classes.Cards.Minions.Standard.Goliath;
-import Classes.Cards.Minions.Standard.Sentinel;
-import Classes.Cards.Minions.Standard.Warden;
 
 import java.util.Scanner;
 
@@ -41,51 +28,51 @@ public class TestClass {
             String col = input.nextLine();
             String[] colours = col.split(" ");
 
-            switch (name) {
-                case "Berserker":
-                    testCard = new Berserker(mana, health, attackDamage, description, colours, name);
-                    break;
-                case "Goliath":
-                    testCard = new Goliath(mana,  health, attackDamage, description, colours, name);
-                    break;
-                case "Sentinel":
-                    testCard = new Sentinel(mana, health, attackDamage, description, colours, name);
-                    break;
-                case "Warden":
-                    testCard = new Warden(mana, health, attackDamage, description, colours, name);
-                    break;
-                case "Disciple":
-                    testCard = new Disciple(mana, health, description, colours, name);
-                    break;
-                case "Miraj":
-                    testCard = new Miraj(mana, health, attackDamage, description, colours, name);
-                    break;
-                case "The Cursed One":
-                    testCard = new TheCursedOne(mana, health, description, colours, name);
-                    break;
-                case "The Ripper":
-                    testCard = new TheRipper(mana, health, attackDamage, description, colours, name);
-                    break;
-            }
+//            switch (name) {
+//                case "Berserker":
+//                    testCard = new Berserker(mana, health, attackDamage, description, colours, name);
+//                    break;
+//                case "Goliath":
+//                    testCard = new Goliath(mana,  health, attackDamage, description, colours, name);
+//                    break;
+//                case "Sentinel":
+//                    testCard = new Sentinel(mana, health, attackDamage, description, colours, name);
+//                    break;
+//                case "Warden":
+//                    testCard = new Warden(mana, health, attackDamage, description, colours, name);
+//                    break;
+//                case "Disciple":
+//                    testCard = new Disciple(mana, health, description, colours, name);
+//                    break;
+//                case "Miraj":
+//                    testCard = new Miraj(mana, health, attackDamage, description, colours, name);
+//                    break;
+//                case "The Cursed One":
+//                    testCard = new TheCursedOne(mana, health, description, colours, name);
+//                    break;
+//                case "The Ripper":
+//                    testCard = new TheRipper(mana, health, attackDamage, description, colours, name);
+//                    break;
+//            }
         }
-        if(EnvironmentString.contains(name)) {
-            int mana = input.nextInt();
-            input.nextLine();
-            String description = input.nextLine();
-            String col = input.nextLine();
-            String[] colours = col.split(" ");
-            switch (name) {
-                case "Firestorm":
-                    testCard = new Firestorm(name, mana, description, colours);
-                    break;
-                case "HeartHound":
-                    testCard = new HeartHound(name, mana, description, colours);
-                    break;
-                case "Winterfell":
-                    testCard = new Winterfell(name, mana, description, colours);
-                    break;
-            }
-        }
+//        if(EnvironmentString.contains(name)) {
+//            int mana = input.nextInt();
+//            input.nextLine();
+//            String description = input.nextLine();
+//            String col = input.nextLine();
+//            String[] colours = col.split(" ");
+//            switch (name) {
+//                case "Firestorm":
+//                    testCard = new Firestorm(name, mana, description, colours);
+//                    break;
+//                case "HeartHound":
+//                    testCard = new HeartHound(name, mana, description, colours);
+//                    break;
+//                case "Winterfell":
+//                    testCard = new Winterfell(name, mana, description, colours);
+//                    break;
+//            }
+//        }
         if(HeroesString.contains(name)) {
             int mana = input.nextInt();
             input.nextLine();
