@@ -74,11 +74,13 @@ public final class Main {
 
         //TODO add here the entry point to your implementation
 
-        //first we create the two player and their decks
+        //first we create the two players and their decks
         Player playerOne = new Player(inputData.getPlayerOneDecks());
         Player playerTwo = new Player(inputData.getPlayerTwoDecks());
 
-        
+
+
+
 
 
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
