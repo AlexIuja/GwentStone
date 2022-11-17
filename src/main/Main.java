@@ -1,5 +1,6 @@
 package main;
 
+import Classes.Player;
 import checker.Checker;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -72,6 +73,12 @@ public final class Main {
         ArrayNode output = objectMapper.createArrayNode();
 
         //TODO add here the entry point to your implementation
+
+        //first we create the two player and their decks
+        Player playerOne = new Player(inputData.getPlayerOneDecks());
+        Player playerTwo = new Player(inputData.getPlayerTwoDecks());
+
+        
 
 
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();

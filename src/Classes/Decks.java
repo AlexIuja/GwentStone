@@ -48,4 +48,5 @@ public class Decks {
                         cards.add(new Winterfell(iter.getName(), iter.getMana(), iter.getDescription(), iter.getColors()));
         }
     }
+
 }
