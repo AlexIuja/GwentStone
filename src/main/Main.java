@@ -1,5 +1,7 @@
 package main;
 
+import Classes.Decks;
+import Classes.Game;
 import Classes.Player;
 import Classes.StartGame;
 import checker.Checker;
@@ -19,7 +21,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Objects;
+import java.util.Random;
 
 /**
  * The entry point to this homework. It runs the checker that tests your implentation.
@@ -79,15 +83,34 @@ public final class Main {
 
         Player playerOne = new Player(inputData.getPlayerOneDecks());
         Player playerTwo = new Player(inputData.getPlayerTwoDecks());
+        Game game = new Game();
+        game.createActionList(inputData.getGames().get(0).getActions());
+        game.setStartGame(new StartGame(inputData.getGames().get(0).getStartGame(), playerOne, playerTwo));
 
 
 
-        for(int i = 0; i < inputData.getGames().size(); i++) {
-            StartGame startGame = new StartGame(inputData.getGames().get(i).getStartGame(), playerOne, playerTwo);
-//            System.out.println(playerOne.getDecks());
-//            System.out.println(playerTwo.getHero());
-        }
+        Decks playingPlayer1 = new Decks(playerOne.getDecks().get(game.getStartGame().getPlayerOneDeckIdx()));
+        Decks playingPlayer2 = new Decks(playerTwo.getDecks().get(game.getStartGame().getPlayerTwoDeckIdx()));
 
+
+
+        Collections.shuffle(playingPlayer1.getCards(), new Random(game.getStartGame().getShuffleSeed()));
+        Collections.shuffle(playingPlayer2.getCards(), new Random(game.getStartGame().getShuffleSeed()));
+
+
+        playerOne.addInHand(playingPlayer1.getCards().get(0));
+        playingPlayer1.getCards().remove(0);
+
+        System.out.println(game.getActions());
+        //System.out.println(playingPlayer1.getCards());
+        System.out.println();
+
+
+
+//        for(int i = 0; i < inputData.getGames().size(); i++) {
+//            game.setStartGame(new StartGame(inputData.getGames().get(i).getStartGame(), playerOne, playerTwo));
+//
+//        }
 
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
 
@@ -98,9 +121,7 @@ public final class Main {
 //        n = objectMapper.readTree(p1);
 //        output.add(n);
 
-        String p1 = objectWriter.writeValueAsString(playerOne);
-        JsonNode n = objectMapper.readTree(p1);
-        output.add(n);
+
 
         objectWriter.writeValue(new File(filePath2), output);
 

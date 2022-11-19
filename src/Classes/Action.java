@@ -10,7 +10,16 @@ public class Action {
     private int x;
     private int y;
 
-
+    public Action(String command, int handIdx, Coordinates cardAttacker, Coordinates cardAttacked, int affectedRow, int playerIdx, int x, int y) {
+        this.command = command;
+        this.handIdx = handIdx;
+        this.cardAttacker = cardAttacker;
+        this.cardAttacked = cardAttacked;
+        this.affectedRow = affectedRow;
+        this.playerIdx = playerIdx;
+        this.x = x;
+        this.y = y;
+    }
 
     public String getCommand() {
         return command;

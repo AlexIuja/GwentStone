@@ -17,23 +17,23 @@ public class StartGame {
         shuffleSeed = input.getShuffleSeed();
         switch (input.getPlayerOneHero().getName()) {
             case "Empress Thorina" ->
-                    playerOne.setHero(new EmpressThorina(input.getPlayerOneHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors()));
+                    playerOne.setHero(new EmpressThorina(input.getPlayerOneHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors(), input.getPlayerOneHero().getName()));
             case "General Kocioraw" ->
-                    playerOne.setHero(new GeneralKocioraw(input.getPlayerOneHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors()));
+                    playerOne.setHero(new GeneralKocioraw(input.getPlayerOneHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors(), input.getPlayerOneHero().getName()));
             case "King Mudface" ->
-                    playerOne.setHero(new KingMudface(input.getPlayerOneHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors()));
+                    playerOne.setHero(new KingMudface(input.getPlayerOneHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors(), input.getPlayerOneHero().getName()));
             case "Lord Royce" ->
-                    playerOne.setHero(new LordRoyce(input.getPlayerOneHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors()));
+                    playerOne.setHero(new LordRoyce(input.getPlayerOneHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors(), input.getPlayerOneHero().getName()));
         }
         switch (input.getPlayerTwoHero().getName()) {
             case "Empress Thorina" ->
-                    playerTwo.setHero(new EmpressThorina(input.getPlayerTwoHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors()));
+                    playerTwo.setHero(new EmpressThorina(input.getPlayerTwoHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors(), input.getPlayerTwoHero().getName()));
             case "General Kocioraw" ->
-                    playerTwo.setHero(new GeneralKocioraw(input.getPlayerTwoHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors()));
+                    playerTwo.setHero(new GeneralKocioraw(input.getPlayerTwoHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors(), input.getPlayerTwoHero().getName()));
             case "King Mudface" ->
-                    playerTwo.setHero(new KingMudface(input.getPlayerTwoHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors()));
+                    playerTwo.setHero(new KingMudface(input.getPlayerTwoHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors(), input.getPlayerTwoHero().getName()));
             case "Lord Royce" ->
-                    playerTwo.setHero(new LordRoyce(input.getPlayerTwoHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors()));
+                    playerTwo.setHero(new LordRoyce(input.getPlayerTwoHero().getMana(), input.getPlayerOneHero().getDescription(), input.getPlayerOneHero().getColors(), input.getPlayerTwoHero().getName()));
         }
         startingPlayer = input.getStartingPlayer();
 

@@ -12,7 +12,8 @@ public abstract class Hero extends Card {
     private int health = 30;
     private String specialAbility = null;
 
-    public Hero(int mana, String description, ArrayList<String> colors) {
+    public Hero(int mana, String description, ArrayList<String> colors, String name) {
+        super(name);
         this.mana = mana;
         this.description = description;
         this.colors = colors;

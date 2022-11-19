@@ -5,13 +5,12 @@ import Classes.Cards.Card;
 import java.util.ArrayList;
 
 public abstract class Environment extends Card {
-    private String name;
     private int mana;
     private String description;
     private ArrayList<String> colors;
 
     public Environment(String name, int mana, String description, ArrayList<String> colors) {
-        this.name = name;
+        super(name);
         this.mana = mana;
         this.description = description;
         this.colors = colors;
@@ -20,20 +19,13 @@ public abstract class Environment extends Card {
     @Override
     public String toString() {
         return "Environment{" +
-                "name='" + name + '\'' +
+                "name='" + getName() + '\'' +
                 ", mana=" + mana +
                 ", description='" + description + '\'' +
                 ", colors=" + colors +
                 '}';
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public int getMana() {
         return mana;
