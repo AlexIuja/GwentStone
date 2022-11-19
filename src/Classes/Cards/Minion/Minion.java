@@ -91,16 +91,12 @@ public abstract class Minion extends Card {
 
     @Override
     public String toString() {
-        return "Minion{" +
-                "mana=" + mana +
-                ", health=" + health +
+        return "{ mana=" + mana +
                 ", attackDamage=" + attackDamage +
+                ", health=" + health +
                 ", description='" + description + '\'' +
                 ", colors=" + colors +
                 ", name='" + name + '\'' +
-                ", tank=" + tank +
-                ", frozen=" + frozen +
-                ", specialAbility='" + specialAbility + '\'' +
                 '}';
     }
 

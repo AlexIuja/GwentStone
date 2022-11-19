@@ -1,12 +1,15 @@
 package main;
 
 import Classes.Player;
+import Classes.StartGame;
 import checker.Checker;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import checker.CheckerConstants;
+import com.fasterxml.jackson.databind.node.BaseJsonNode;
 import fileio.CardInput;
 import fileio.Input;
 
@@ -74,16 +77,33 @@ public final class Main {
 
         //TODO add here the entry point to your implementation
 
-        //first we create the two players and their decks
         Player playerOne = new Player(inputData.getPlayerOneDecks());
         Player playerTwo = new Player(inputData.getPlayerTwoDecks());
 
 
 
-
+        for(int i = 0; i < inputData.getGames().size(); i++) {
+            StartGame startGame = new StartGame(inputData.getGames().get(i).getStartGame(), playerOne, playerTwo);
+//            System.out.println(playerOne.getDecks());
+//            System.out.println(playerTwo.getHero());
+        }
 
 
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
+
+//        String p1 = objectWriter.writeValueAsString(playerOne.getDecks().get(0).getCards());
+//        JsonNode n = objectMapper.readTree(p1);
+//        output.add(n);
+//        p1 = objectWriter.writeValueAsString(playerTwo.getDecks().get(0).getCards());
+//        n = objectMapper.readTree(p1);
+//        output.add(n);
+
+        String p1 = objectWriter.writeValueAsString(playerOne);
+        JsonNode n = objectMapper.readTree(p1);
+        output.add(n);
+
         objectWriter.writeValue(new File(filePath2), output);
+
+
     }
 }

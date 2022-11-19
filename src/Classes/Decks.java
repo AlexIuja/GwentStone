@@ -49,4 +49,27 @@ public class Decks {
         }
     }
 
+    public int getNrCardsInDeck() {
+        return nrCardsInDeck;
+    }
+
+    public void setNrCardsInDeck(int nrCardsInDeck) {
+        this.nrCardsInDeck = nrCardsInDeck;
+    }
+
+    public ArrayList<Card> getCards() {
+        return cards;
+    }
+
+    public void setCards(ArrayList<Card> cards) {
+        this.cards = cards;
+    }
+
+    @Override
+    public String toString() {
+        return "Decks{" +
+                "nrCardsInDeck=" + nrCardsInDeck +
+                ", cards=" + cards +
+                '}';
+    }
 }

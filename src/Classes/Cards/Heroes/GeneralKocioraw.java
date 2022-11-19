@@ -7,8 +7,5 @@ public class GeneralKocioraw  extends Hero{
         super(mana, description, colors);
     }
 
-    @Override
-    public void execAbility() {
-        //TODO
-    }
+
 }

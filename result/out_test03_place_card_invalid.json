@@ -1,1 +1,148 @@
-[ ]
+[ {
+  "nrDecks" : 2,
+  "hero" : {
+    "mana" : 3,
+    "description" : "Premium card: An army is not sufficient, he is ready obliterate, it is time for chaos.",
+    "colors" : [ "Green", "Yellow" ],
+    "health" : 30,
+    "specialAbility" : null,
+    "alive" : true
+  },
+  "decks" : [ {
+    "nrCardsInDeck" : 7,
+    "cards" : [ {
+      "mana" : 2,
+      "health" : 6,
+      "attackDamage" : 3,
+      "description" : "Standard card: He has seen everything, his mind has never been asleep since the making of the realm.",
+      "colors" : [ "Brown", "Blue" ],
+      "name" : "Warden",
+      "tank" : true,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "mana" : 4,
+      "health" : 4,
+      "attackDamage" : 4,
+      "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+      "colors" : [ "Red", "Black" ],
+      "name" : "Miraj",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Skyjack"
+    }, {
+      "mana" : 4,
+      "health" : 7,
+      "attackDamage" : 1,
+      "description" : "Premium card: No matter how many, his body will fight. Save your breath for the Mountain is strong.",
+      "colors" : [ "Red", "Purple" ],
+      "name" : "Goliath",
+      "tank" : true,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "mana" : 3,
+      "health" : 5,
+      "attackDamage" : 2,
+      "description" : "Standard card: He has seen everything, his mind has never been asleep since the making of the realm.",
+      "colors" : [ "Black", "White", "Green" ],
+      "name" : "Warden",
+      "tank" : true,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "name" : "Winterfell",
+      "mana" : 2,
+      "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
+      "colors" : [ "White", "Grey", "Black" ]
+    }, {
+      "mana" : 4,
+      "health" : 7,
+      "attackDamage" : 2,
+      "description" : "Premium card: No matter how many, his body will fight. Save your breath for the Mountain is strong.",
+      "colors" : [ "Red", "Purple" ],
+      "name" : "Goliath",
+      "tank" : true,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "mana" : 3,
+      "health" : 3,
+      "attackDamage" : 6,
+      "description" : "Standard card: Death incarnate. No better time to die than now.",
+      "colors" : [ "Orange", "Red", "Black" ],
+      "name" : "The Ripper",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Weak Knees"
+    } ]
+  }, {
+    "nrCardsInDeck" : 7,
+    "cards" : [ {
+      "name" : "Winterfell",
+      "mana" : 2,
+      "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
+      "colors" : [ "White", "Blue" ]
+    }, {
+      "mana" : 4,
+      "health" : 7,
+      "attackDamage" : 1,
+      "description" : "Premium card: No matter how many, his body will fight. Save your breath for the Mountain is strong.",
+      "colors" : [ "Brown", "Black", "Grey" ],
+      "name" : "Goliath",
+      "tank" : true,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "mana" : 3,
+      "health" : 5,
+      "attackDamage" : 2,
+      "description" : "Standard card: He has seen everything, his mind has never been asleep since the making of the realm.",
+      "colors" : [ "Black", "White", "Green" ],
+      "name" : "Warden",
+      "tank" : true,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "mana" : 3,
+      "health" : 4,
+      "attackDamage" : 6,
+      "description" : "Standard card: Death incarnate. No better time to die than now.",
+      "colors" : [ "Orange", "Red", "Black" ],
+      "name" : "The Ripper",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Weak Knees"
+    }, {
+      "mana" : 5,
+      "health" : 4,
+      "attackDamage" : 4,
+      "description" : "Premium card: Insanity is always an option, now it is an absolute.",
+      "colors" : [ "Red", "Black" ],
+      "name" : "Miraj",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Skyjack"
+    }, {
+      "mana" : 4,
+      "health" : 3,
+      "attackDamage" : 6,
+      "description" : "Standard card: Death incarnate. No better time to die than now.",
+      "colors" : [ "Orange", "Red", "Black" ],
+      "name" : "The Ripper",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Weak Knees"
+    }, {
+      "mana" : 4,
+      "health" : 4,
+      "attackDamage" : 6,
+      "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
+      "colors" : [ "Black", "Yellow" ],
+      "name" : "The Ripper",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Weak Knees"
+    } ]
+  } ]
+} ]

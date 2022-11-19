@@ -53,5 +53,12 @@ public class Player {
         this.decks = decks;
     }
 
-
+    @Override
+    public String toString() {
+        return "Player{" +
+                "nrDecks=" + nrDecks +
+                ", hero=" + hero +
+                ", decks=" + decks +
+                '}';
+    }
 }

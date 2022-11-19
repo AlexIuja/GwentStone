@@ -1,1 +1,138 @@
-[ ]
+[ {
+  "nrDecks" : 2,
+  "hero" : {
+    "mana" : 3,
+    "description" : "Premium card: Glory to all we see, glory to all he is, glory to everyone who will try to escape him.",
+    "colors" : [ "Black", "Red", "Grey" ],
+    "health" : 30,
+    "specialAbility" : null,
+    "alive" : true
+  },
+  "decks" : [ {
+    "nrCardsInDeck" : 7,
+    "cards" : [ {
+      "name" : "Winterfell",
+      "mana" : 1,
+      "description" : "Premium card: All is white. My mouth is frozen and I must scream.",
+      "colors" : [ "White", "Grey", "Black" ]
+    }, {
+      "mana" : 2,
+      "health" : 1,
+      "attackDamage" : 2,
+      "description" : "Standard card: A drink can always be served, with the blood of his enemies.",
+      "colors" : [ "Red", "Blue", "Pink" ],
+      "name" : "Berserker",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "mana" : 1,
+      "health" : 1,
+      "attackDamage" : 2,
+      "description" : "Premium card: Fear him. Your last breath is now.",
+      "colors" : [ "Red", "Blue", "Pink" ],
+      "name" : "Berserker",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "name" : "Winterfell",
+      "mana" : 1,
+      "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
+      "colors" : [ "White", "Blue" ]
+    }, {
+      "mana" : 3,
+      "health" : 1,
+      "attackDamage" : 0,
+      "description" : "Premium card: Nobody suspects an outcast, not even the Gods.",
+      "colors" : [ "Pink", "Purple" ],
+      "name" : "The Cursed One",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Shapeshift"
+    }, {
+      "mana" : 1,
+      "health" : 3,
+      "attackDamage" : 1,
+      "description" : "Premium card: His presence is not known even by ghosts, success at all costs.",
+      "colors" : [ "Black", "White" ],
+      "name" : "Sentinel",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "mana" : 3,
+      "health" : 1,
+      "attackDamage" : 0,
+      "description" : "Standard card: Thrown from the highest cliff, revenge will be his glory.",
+      "colors" : [ "Black", "White", "Red" ],
+      "name" : "The Cursed One",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Shapeshift"
+    } ]
+  }, {
+    "nrCardsInDeck" : 7,
+    "cards" : [ {
+      "name" : "Heart Hound",
+      "mana" : 1,
+      "description" : "Premium card: Your mind is ours. Your body is ours. Stop begging.",
+      "colors" : [ "Green", "Black" ]
+    }, {
+      "mana" : 3,
+      "health" : 3,
+      "attackDamage" : 6,
+      "description" : "Standard card: Death incarnate. No better time to die than now.",
+      "colors" : [ "Orange", "Red", "Black" ],
+      "name" : "The Ripper",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Weak Knees"
+    }, {
+      "mana" : 2,
+      "health" : 1,
+      "attackDamage" : 0,
+      "description" : "Premium card: Nobody suspects an outcast, not even the Gods.",
+      "colors" : [ "Black", "White", "Red" ],
+      "name" : "The Cursed One",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Shapeshift"
+    }, {
+      "mana" : 5,
+      "health" : 3,
+      "attackDamage" : 4,
+      "description" : "Premium card: Insanity is always an option, now it is an absolute.",
+      "colors" : [ "Yellow", "Orange", "Red" ],
+      "name" : "Miraj",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Skyjack"
+    }, {
+      "name" : "Winterfell",
+      "mana" : 1,
+      "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
+      "colors" : [ "White", "Blue" ]
+    }, {
+      "mana" : 2,
+      "health" : 4,
+      "attackDamage" : 0,
+      "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
+      "colors" : [ "Yellow", "White" ],
+      "name" : "Disciple",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "God's Plan"
+    }, {
+      "mana" : 4,
+      "health" : 3,
+      "attackDamage" : 5,
+      "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
+      "colors" : [ "Black", "Yellow" ],
+      "name" : "The Ripper",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Weak Knees"
+    } ]
+  } ]
+} ]

@@ -1,1 +1,148 @@
-[ ]
+[ {
+  "nrDecks" : 2,
+  "hero" : {
+    "mana" : 2,
+    "description" : "Standard card: Absolute order, a soldier must devote his life to his General.",
+    "colors" : [ "Green", "Yellow" ],
+    "health" : 30,
+    "specialAbility" : null,
+    "alive" : true
+  },
+  "decks" : [ {
+    "nrCardsInDeck" : 7,
+    "cards" : [ {
+      "name" : "Winterfell",
+      "mana" : 1,
+      "description" : "Premium card: All is white. My mouth is frozen and I must scream.",
+      "colors" : [ "White", "Blue" ]
+    }, {
+      "mana" : 1,
+      "health" : 3,
+      "attackDamage" : 6,
+      "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+      "colors" : [ "Red", "Black" ],
+      "name" : "Miraj",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Skyjack"
+    }, {
+      "mana" : 2,
+      "health" : 2,
+      "attackDamage" : 5,
+      "description" : "Premium card: His presence is not known even by ghosts, success at all costs.",
+      "colors" : [ "Black", "White" ],
+      "name" : "Sentinel",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "mana" : 2,
+      "health" : 2,
+      "attackDamage" : 0,
+      "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
+      "colors" : [ "Green", "Yellow", "Blue" ],
+      "name" : "Disciple",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "God's Plan"
+    }, {
+      "mana" : 2,
+      "health" : 2,
+      "attackDamage" : 0,
+      "description" : "Standard card: Everything is sacred to him, all is but a gift from the saints.",
+      "colors" : [ "Green", "Yellow", "Blue" ],
+      "name" : "Disciple",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "God's Plan"
+    }, {
+      "mana" : 2,
+      "health" : 4,
+      "attackDamage" : 0,
+      "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
+      "colors" : [ "Green", "Yellow", "Blue" ],
+      "name" : "Disciple",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "God's Plan"
+    }, {
+      "mana" : 1,
+      "health" : 4,
+      "attackDamage" : 5,
+      "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
+      "colors" : [ "Black", "Yellow" ],
+      "name" : "The Ripper",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "Weak Knees"
+    } ]
+  }, {
+    "nrCardsInDeck" : 7,
+    "cards" : [ {
+      "name" : "Winterfell",
+      "mana" : 2,
+      "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
+      "colors" : [ "White", "Blue" ]
+    }, {
+      "mana" : 2,
+      "health" : 5,
+      "attackDamage" : 7,
+      "description" : "Standard card: He has seen everything, his mind has never been asleep since the making of the realm.",
+      "colors" : [ "Brown", "Blue" ],
+      "name" : "Warden",
+      "tank" : true,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "mana" : 1,
+      "health" : 2,
+      "attackDamage" : 5,
+      "description" : "Standard card: A drink can always be served, with the blood of his enemies.",
+      "colors" : [ "Purple", "Yellow" ],
+      "name" : "Berserker",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "mana" : 1,
+      "health" : 7,
+      "attackDamage" : 4,
+      "description" : "Standard card: A warrior who is never afraid of battle, no matter the costs",
+      "colors" : [ "Red", "Purple" ],
+      "name" : "Goliath",
+      "tank" : true,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "mana" : 1,
+      "health" : 8,
+      "attackDamage" : 5,
+      "description" : "Premium card: No matter how many, his body will fight. Save your breath for the Mountain is strong.",
+      "colors" : [ "Red", "Purple" ],
+      "name" : "Goliath",
+      "tank" : true,
+      "frozen" : false,
+      "specialAbility" : null
+    }, {
+      "mana" : 1,
+      "health" : 4,
+      "attackDamage" : 0,
+      "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
+      "colors" : [ "Yellow", "White" ],
+      "name" : "Disciple",
+      "tank" : false,
+      "frozen" : false,
+      "specialAbility" : "God's Plan"
+    }, {
+      "mana" : 2,
+      "health" : 5,
+      "attackDamage" : 7,
+      "description" : "Premium card: You shall not pass, you shall not prevail, you shall perish.",
+      "colors" : [ "Brown", "Blue" ],
+      "name" : "Warden",
+      "tank" : true,
+      "frozen" : false,
+      "specialAbility" : null
+    } ]
+  } ]
+} ]
