@@ -1,40 +1,4 @@
 [ {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "useAttackHero",
-  "cardAttacker" : {
-    "x" : 2,
-    "y" : 0
-  }
-}, {
-  "command" : "useAttackHero",
-  "cardAttacker" : {
-    "x" : 2,
-    "y" : 1
-  }
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "useEnvironmentCard",
-  "handIdx" : 0,
-  "affectedRow" : 2
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
   "command" : "getCardAtPosition"
 }, {
   "command" : "getPlayerHero",
@@ -56,20 +20,6 @@
     "name" : "Empress Thorina",
     "health" : 30
   }
-}, {
-  "command" : "useAttackHero",
-  "cardAttacker" : {
-    "x" : 2,
-    "y" : 1
-  }
-}, {
-  "command" : "useAttackHero",
-  "cardAttacker" : {
-    "x" : 3,
-    "y" : 0
-  }
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getCardsInHand",
   "playerIdx" : 2
@@ -80,8 +30,6 @@
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
-  "command" : "placeCard"
-}, {
   "command" : "getCardAtPosition"
 }, {
   "command" : "getPlayerHero",
@@ -103,42 +51,6 @@
     "name" : "Empress Thorina",
     "health" : 30
   }
-}, {
-  "command" : "useAttackHero",
-  "cardAttacker" : {
-    "x" : 1,
-    "y" : 1
-  }
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "useAttackHero",
-  "cardAttacker" : {
-    "x" : 2,
-    "y" : 0
-  }
-}, {
-  "command" : "useAttackHero",
-  "cardAttacker" : {
-    "x" : 3,
-    "y" : 1
-  }
-}, {
-  "command" : "useAttackHero",
-  "cardAttacker" : {
-    "x" : 3,
-    "y" : 1
-  }
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getPlayerMana",
   "playerIdx" : 2

@@ -1,26 +1,4 @@
 [ {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "cardUsesAttack",
-  "cardAttacker" : {
-    "x" : 1,
-    "y" : 0
-  },
-  "cardAttacked" : {
-    "x" : 3,
-    "y" : 0
-  }
-}, {
-  "command" : "endPlayerTurn"
-}, {
   "command" : "getCardsInHand",
   "playerIdx" : 1
 }, {
@@ -29,42 +7,6 @@
 }, {
   "command" : "getPlayerTurn",
   "output" : 1
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "cardUsesAttack",
-  "cardAttacker" : {
-    "x" : 3,
-    "y" : 0
-  },
-  "cardAttacked" : {
-    "x" : 1,
-    "y" : 0
-  }
-}, {
-  "command" : "cardUsesAttack",
-  "cardAttacker" : {
-    "x" : 2,
-    "y" : 0
-  },
-  "cardAttacked" : {
-    "x" : 1,
-    "y" : 0
-  }
-}, {
-  "command" : "cardUsesAttack",
-  "cardAttacker" : {
-    "x" : 3,
-    "y" : 1
-  },
-  "cardAttacked" : {
-    "x" : 1,
-    "y" : 0
-  }
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getPlayerMana",
   "playerIdx" : 2

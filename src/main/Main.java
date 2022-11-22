@@ -110,28 +110,10 @@ public final class Main {
 
 
         //cream deckurile pe care jucatorii le vor folosi si le amestecam
-//        Decks playingPlayer1 = new Decks(playerOne.getDecks().get(game.getStartGame().getPlayerOneDeckIdx()));
-//        Decks playingPlayer2 = new Decks(playerTwo.getDecks().get(game.getStartGame().getPlayerTwoDeckIdx()));
-//        Collections.shuffle(playingPlayer1.getCards(), new Random(game.getStartGame().getShuffleSeed()));
-//        Collections.shuffle(playingPlayer2.getCards(), new Random(game.getStartGame().getShuffleSeed()));
-//        game.setPlayingPlayerOne(playingPlayer1);
-//        game.setPlayingPlayerTwo(playingPlayer2);
+
 
         //pentru prima tura din joc, trebuie sa adaugam cate o carte in mana fiecarui jucator si
         //sa le eliminam din pachete
-//        playerOne.addInHand(playingPlayer1.getCards().get(0));
-//        playingPlayer1.getCards().remove(0);
-//        playerTwo.addInHand(playingPlayer2.getCards().get(0));
-//        playingPlayer2.getCards().remove(0);
-
-
-
-
-
-//        for(int i = 0; i < inputData.getGames().size(); i++) {
-//            game.setStartGame(new StartGame(inputData.getGames().get(i).getStartGame(), playerOne, playerTwo));
-//
-//        }
 
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         String p;
@@ -152,18 +134,14 @@ public final class Main {
             playingPlayer2.getCards().remove(0);
             for(int j = 0; j < game.getActions().size(); j++) {
                 game.getActions().get(j).exec(game, playerOne, playerTwo, playingPlayer1, playingPlayer2);
-                p = objectWriter.writeValueAsString(game.getActions().get(j));
-                JsonNode n = objectMapper.readTree(p);
-                output.add(n);
+                if(game.getActions().get(j).getCommand().contains("get")) {
+                    p = objectWriter.writeValueAsString(game.getActions().get(j));
+                    JsonNode n = objectMapper.readTree(p);
+                    output.add(n);
+                }
             }
         }
 
-//        String p1 = objectWriter.writeValueAsString(playerOne.getDecks().get(0).getCards());
-//        JsonNode n = objectMapper.readTree(p1);
-//        output.add(n);
-//        p1 = objectWriter.writeValueAsString(playerTwo.getDecks().get(0).getCards());
-//        n = objectMapper.readTree(p1);
-//        output.add(n);
 
 
 

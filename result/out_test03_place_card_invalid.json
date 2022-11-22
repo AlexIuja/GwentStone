@@ -1,14 +1,4 @@
 [ {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2
 }, {
@@ -18,26 +8,6 @@
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2
 }, {
@@ -46,30 +16,6 @@
 }, {
   "command" : "getPlayerTurn",
   "output" : 2
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getPlayerMana",
   "playerIdx" : 2

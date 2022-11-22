@@ -1,63 +1,15 @@
 [ {
-  "command" : "endPlayerTurn"
+  "command" : "getEnvironmentCardsInHand"
 }, {
-  "command" : "endPlayerTurn"
+  "command" : "getCardAtPosition"
 }, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
+  "command" : "getCardAtPosition"
 }, {
   "command" : "getEnvironmentCardsInHand"
 }, {
-  "command" : "placeCard"
-}, {
-  "command" : "useEnvironmentCard",
-  "handIdx" : 0,
-  "affectedRow" : 0
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
   "command" : "getCardAtPosition"
 }, {
   "command" : "getCardAtPosition"
-}, {
-  "command" : "useEnvironmentCard",
-  "handIdx" : 0,
-  "affectedRow" : 3
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "getEnvironmentCardsInHand"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "getCardAtPosition"
-}, {
-  "command" : "getCardAtPosition"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "useEnvironmentCard",
-  "handIdx" : 0,
-  "affectedRow" : 0
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "useEnvironmentCard",
-  "handIdx" : 0,
-  "affectedRow" : 3
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getPlayerMana",
   "playerIdx" : 1

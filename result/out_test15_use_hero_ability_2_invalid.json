@@ -1,94 +1,16 @@
 [ {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
   "command" : "getCardAtPosition"
 }, {
   "command" : "getCardAtPosition"
-}, {
-  "command" : "useHeroAbility",
-  "affectedRow" : 3
-}, {
-  "command" : "useHeroAbility",
-  "affectedRow" : 1
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getFrozenCardsOnTable"
 }, {
   "command" : "getPlayerTurn",
   "output" : 1
 }, {
-  "command" : "placeCard"
-}, {
   "command" : "getCardAtPosition"
 }, {
   "command" : "getCardAtPosition"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "useHeroAbility",
-  "affectedRow" : 0
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "useHeroAbility",
-  "affectedRow" : 1
-}, {
-  "command" : "useHeroAbility",
-  "affectedRow" : 3
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "useHeroAbility",
-  "affectedRow" : 1
-}, {
-  "command" : "useHeroAbility",
-  "affectedRow" : 2
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "placeCard"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "useHeroAbility",
-  "affectedRow" : 2
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getPlayerMana",
   "playerIdx" : 2
