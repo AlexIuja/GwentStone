@@ -1,5 +1,6 @@
 package main;
 
+import Classes.Action.Action;
 import Classes.Decks;
 import Classes.Game;
 import Classes.Player;
@@ -81,30 +82,53 @@ public final class Main {
 
         //TODO add here the entry point to your implementation
 
+        //initializam cei doi jucatori si jocul luand input din fisierele .json
         Player playerOne = new Player(inputData.getPlayerOneDecks());
         Player playerTwo = new Player(inputData.getPlayerTwoDecks());
         Game game = new Game();
-        game.createActionList(inputData.getGames().get(0).getActions());
+        game.setPlayerTurn(inputData.getGames().get(0).getStartGame().getStartingPlayer());
         game.setStartGame(new StartGame(inputData.getGames().get(0).getStartGame(), playerOne, playerTwo));
 
 
+        game.initActionList(inputData.getGames().get(0).getActions());
+        System.out.println(game.getActions());
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //cream deckurile pe care jucatorii le vor folosi si le amestecam
         Decks playingPlayer1 = new Decks(playerOne.getDecks().get(game.getStartGame().getPlayerOneDeckIdx()));
         Decks playingPlayer2 = new Decks(playerTwo.getDecks().get(game.getStartGame().getPlayerTwoDeckIdx()));
-
-
-
         Collections.shuffle(playingPlayer1.getCards(), new Random(game.getStartGame().getShuffleSeed()));
         Collections.shuffle(playingPlayer2.getCards(), new Random(game.getStartGame().getShuffleSeed()));
+        game.setPlayingPlayerOne(playingPlayer1);
+        game.setPlayingPlayerTwo(playingPlayer2);
 
-
+        //pentru prima tura din joc, trebuie sa adaugam cate o carte in mana fiecarui jucator si
+        //sa le eliminam din pachete
         playerOne.addInHand(playingPlayer1.getCards().get(0));
         playingPlayer1.getCards().remove(0);
+        playerTwo.addInHand(playingPlayer2.getCards().get(0));
+        playingPlayer2.getCards().remove(0);
 
-        System.out.println(game.getActions());
         //System.out.println(playingPlayer1.getCards());
-        System.out.println();
-
 
 
 //        for(int i = 0; i < inputData.getGames().size(); i++) {
