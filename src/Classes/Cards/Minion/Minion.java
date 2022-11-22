@@ -10,9 +10,6 @@ public abstract class Minion extends Card {
     private int attackDamage;
     private String description;
     private ArrayList<String> colors;
-    private boolean tank;
-    private boolean frozen;
-    public String specialAbility;
 
 
     public Minion(int mana, int health, int attackDamage, String description, ArrayList<String> colors, String name) {
@@ -64,22 +61,6 @@ public abstract class Minion extends Card {
         this.colors = colors;
     }
 
-
-    public boolean isTank() {
-        return tank;
-    }
-
-    public void setTank(boolean tank) {
-        this.tank = tank;
-    }
-
-    public boolean isFrozen() {
-        return frozen;
-    }
-
-    public void setFrozen(boolean frozen) {
-        this.frozen = frozen;
-    }
 
     @Override
     public String toString() {

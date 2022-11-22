@@ -1,1 +1,108 @@
-[ ]
+[ {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "placeCard"
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "placeCard"
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "getEnvironmentCardsInHand"
+}, {
+  "command" : "useEnvironmentCard",
+  "handIdx" : 0,
+  "affectedRow" : 1
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "getCardAtPosition"
+}, {
+  "command" : "getCardAtPosition"
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "getEnvironmentCardsInHand"
+}, {
+  "command" : "getFrozenCardsOnTable"
+}, {
+  "command" : "getPlayerTurn",
+  "output" : 1
+}, {
+  "command" : "placeCard"
+}, {
+  "command" : "getCardAtPosition"
+}, {
+  "command" : "getCardAtPosition"
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "placeCard"
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "placeCard"
+}, {
+  "command" : "useEnvironmentCard",
+  "handIdx" : 0,
+  "affectedRow" : 2
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "placeCard"
+}, {
+  "command" : "useEnvironmentCard",
+  "handIdx" : 0,
+  "affectedRow" : 3
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "placeCard"
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "placeCard"
+}, {
+  "command" : "placeCard"
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "placeCard"
+}, {
+  "command" : "useEnvironmentCard",
+  "handIdx" : 0,
+  "affectedRow" : 3
+}, {
+  "command" : "useEnvironmentCard",
+  "handIdx" : 0,
+  "affectedRow" : 1
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "useEnvironmentCard",
+  "handIdx" : 0,
+  "affectedRow" : 2
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "endPlayerTurn"
+}, {
+  "command" : "getPlayerMana",
+  "playerIdx" : 1
+}, {
+  "command" : "getPlayerMana",
+  "playerIdx" : 2
+}, {
+  "command" : "getCardsOnTable"
+}, {
+  "command" : "getCardsInHand",
+  "playerIdx" : 1
+}, {
+  "command" : "getCardsInHand",
+  "playerIdx" : 2
+} ]

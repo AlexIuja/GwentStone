@@ -97,7 +97,7 @@ public class Decks {
     @Override
     public String toString() {
         return "Decks{" +
-                "nrCardsInDeck=" + nrCardsInDeck +
+//                "nrCardsInDeck=" + nrCardsInDeck +
                 ", cards=" + cards +
                 '}';
     }

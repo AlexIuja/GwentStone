@@ -9,19 +9,21 @@ public abstract class Hero extends Card {
     private int mana;
     private String description;
     private ArrayList<String> colors;
+
+    private String name;
     private int health = 30;
-    private String specialAbility = null;
 
     public Hero(int mana, String description, ArrayList<String> colors, String name) {
         super(name);
         this.mana = mana;
         this.description = description;
         this.colors = colors;
+        this.name = name;
     }
 
-    public Boolean isAlive() {
-        return health > 0;
-    }
+//    public Boolean isAlive() {
+//        return health > 0;
+//    }
 
     public int getMana() {
         return mana;
@@ -55,22 +57,14 @@ public abstract class Hero extends Card {
         this.health = health;
     }
 
-    public String getSpecialAbility() {
-        return specialAbility;
-    }
 
-    public void setSpecialAbility(String specialAbility) {
-        this.specialAbility = specialAbility;
-    }
 
     @Override
     public String toString() {
-        return "Hero{" +
-                "mana=" + mana +
+        return "mana=" + mana +
                 ", description='" + description + '\'' +
                 ", colors=" + colors +
-                ", health=" + health +
-                ", alive=" + isAlive() +
-                '}';
+                ", name='" + getName() + '\'' +
+                ", health=" + health;
     }
 }

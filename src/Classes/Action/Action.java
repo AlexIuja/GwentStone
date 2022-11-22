@@ -20,6 +20,8 @@ public abstract class Action {
         this.command = command;
     }
 
+    public void exec(Game game, Player playerOne, Player playerTwo, Decks playingPlayer1, Decks playingPlayer2) {}
+
     @Override
     public String toString() {
         return "command='" + command + '\'';

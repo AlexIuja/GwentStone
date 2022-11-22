@@ -6,8 +6,10 @@ import fileio.ActionsInput;
 import java.util.ArrayList;
 
 public class Game {
-    private StartGame startGame;
+    private StartGame startGame = new StartGame();
     private ArrayList<Action> actions = new ArrayList<>();
+
+    private int currentPlayerIdx = startGame.getStartingPlayer();
 
     private int playerTurn;
     private Player playerOne;
@@ -49,21 +51,48 @@ public class Game {
     }
 
     public void initActionList(ArrayList<ActionsInput> actionList) {
-        for(int i = 0; i < actionList.size(); i++)
-            if(actionList.get(i).getCommand().equals("getPlayerDeck"))
-                actions.add(new GetPlayerDeck(actionList.get(i).getCommand(), actionList.get(i).getPlayerIdx()));
-            else if(actionList.get(i).getCommand().equals("getPlayerHero"))
-                actions.add(new GetPlayerHero(actionList.get(i).getCommand(), actionList.get(i).getPlayerIdx()));
-            else if(actionList.get(i).getCommand().equals("getPlayerTurn"))
-                actions.add(new GetPlayerTurn(actionList.get(i).getCommand()));
-            else if(actionList.get(i).getCommand().equals("endPlayerTurn"))
-                actions.add(new EndPlayerTurn(actionList.get(i).getCommand()));
-            else if(actionList.get(i).getCommand().equals("placeCard"))
-                actions.add(new PlaceCard(actionList.get(i).getCommand(), actionList.get(i).getHandIdx()));
-            
-
+        for (ActionsInput actionsInput : actionList)
+            switch (actionsInput.getCommand()) {
+                case "getPlayerDeck" ->
+                        actions.add(new GetPlayerDeck(actionsInput.getCommand(), actionsInput.getPlayerIdx()));
+                case "getPlayerHero" ->
+                        actions.add(new GetPlayerHero(actionsInput.getCommand(), actionsInput.getPlayerIdx()));
+                case "getPlayerTurn" -> actions.add(new GetPlayerTurn(actionsInput.getCommand()));
+                case "endPlayerTurn" -> actions.add(new EndPlayerTurn(actionsInput.getCommand()));
+                case "placeCard" -> actions.add(new PlaceCard(actionsInput.getCommand(), actionsInput.getHandIdx()));
+                case "getCardsInHand" ->
+                        actions.add(new GetCardsInHand(actionsInput.getCommand(), actionsInput.getPlayerIdx()));
+                case "getPlayerMana" ->
+                        actions.add(new GetPlayerMana(actionsInput.getCommand(), actionsInput.getPlayerIdx()));
+                case "getCardsOnTable" -> actions.add(new GetCardsOnTable(actionsInput.getCommand()));
+                case "getEnvironmentCardsInHand" ->
+                        actions.add(new GetEnvironmentCardsInHand(actionsInput.getCommand()));
+                case "useEnvironmentCard" ->
+                        actions.add(new UseEnvironmentCard(actionsInput.getCommand(), actionsInput.getHandIdx(), actionsInput.getAffectedRow()));
+                case "getCardAtPosition" ->
+                        actions.add(new GetCardAtPosition(actionsInput.getCommand(), actionsInput.getX(), actionsInput.getY()));
+                case "cardUsesAttack" ->
+                        actions.add(new CardUsesAttack(actionsInput.getCommand(), actionsInput.getCardAttacker(), actionsInput.getCardAttacked()));
+                case "cardUsesAbility" ->
+                        actions.add(new CardUsesAbility(actionsInput.getCommand(), actionsInput.getCardAttacker(), actionsInput.getCardAttacked()));
+                case "useAttackHero" ->
+                        actions.add(new UseAttackHero(actionsInput.getCommand(), actionsInput.getCardAttacker()));
+                case "useHeroAbility" ->
+                        actions.add(new UseHeroAbility(actionsInput.getCommand(), actionsInput.getAffectedRow()));
+                case "getFrozenCardsOnTable" -> actions.add(new GetFrozenCardsOnTable(actionsInput.getCommand()));
+                case "getPlayerOneWins" -> actions.add(new GetPlayerOneWins(actionsInput.getCommand()));
+                case "getPlayerTwoWins" -> actions.add(new GetPlayerTwoWins(actionsInput.getCommand()));
+                case "getTotalGamesPlayed" -> actions.add(new GetTotalGamesPlayed(actionsInput.getCommand()));
+            }
     }
 
+    public int getCurrentPlayerIdx() {
+        return currentPlayerIdx;
+    }
+
+    public void setCurrentPlayerIdx(int currentPlayerIdx) {
+        this.currentPlayerIdx = currentPlayerIdx;
+    }
 
     public int getPlayerTurn() {
         return playerTurn;
