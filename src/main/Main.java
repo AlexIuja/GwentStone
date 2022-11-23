@@ -1,6 +1,7 @@
 package main;
 
 import Classes.Action.Action;
+import Classes.Action.PlaceCard;
 import Classes.Decks;
 import Classes.Game;
 import Classes.Player;
@@ -119,7 +120,7 @@ public final class Main {
         String p;
 
         for(int i = 0; i < inputData.getGames().size(); i++) {
-            game.setPlayerTurn(inputData.getGames().get(i).getStartGame().getStartingPlayer());
+            game.setCurrentPlayerIdx(inputData.getGames().get(i).getStartGame().getStartingPlayer());
             game.initActionList(inputData.getGames().get(i).getActions());
             game.setStartGame(new StartGame(inputData.getGames().get(i).getStartGame(), playerOne, playerTwo));
             Decks playingPlayer1 = new Decks(playerOne.getDecks().get(game.getStartGame().getPlayerOneDeckIdx()));
@@ -129,12 +130,21 @@ public final class Main {
             game.setPlayingPlayerOne(playingPlayer1);
             game.setPlayingPlayerTwo(playingPlayer2);
             playerOne.addInHand(playingPlayer1.getCards().get(0));
+            playerOne.setMana(1);
+            playerTwo.setMana(1);
             playingPlayer1.getCards().remove(0);
             playerTwo.addInHand(playingPlayer2.getCards().get(0));
             playingPlayer2.getCards().remove(0);
             for(int j = 0; j < game.getActions().size(); j++) {
                 game.getActions().get(j).exec(game, playerOne, playerTwo, playingPlayer1, playingPlayer2);
-                if(game.getActions().get(j).getCommand().contains("get")) {
+                if(game.getActions().get(j) instanceof PlaceCard) {
+                    if((((PlaceCard) game.getActions().get(j)).getError() != null)) {
+                        p = objectWriter.writeValueAsString(game.getActions().get(j));
+                        JsonNode n = objectMapper.readTree(p);
+                        output.add(n);
+                    }
+                }
+                else if(game.getActions().get(j).getCommand().contains("get")) {
                     p = objectWriter.writeValueAsString(game.getActions().get(j));
                     JsonNode n = objectMapper.readTree(p);
                     output.add(n);

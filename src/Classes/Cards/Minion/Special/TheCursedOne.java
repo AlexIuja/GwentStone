@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class TheCursedOne extends Minion {
     public TheCursedOne(int mana, int health, String description, ArrayList<String> colors, String name) {
         super(mana, health, 0, description, colors, name);
-
+        setFrozen(false);
     }
 
     @Override

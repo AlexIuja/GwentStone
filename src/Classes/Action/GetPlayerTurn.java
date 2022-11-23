@@ -12,7 +12,7 @@ public class GetPlayerTurn extends Action{
     }
 
     public void exec(Game game, Player playerOne, Player playerTwo, Decks playingPlayer1, Decks playingPlayer2) {
-        output = game.getPlayerTurn();
+        output = game.getCurrentPlayerIdx();
     }
 
     public int getOutput() {

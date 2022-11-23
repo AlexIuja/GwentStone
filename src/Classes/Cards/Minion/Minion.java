@@ -1,6 +1,7 @@
 package Classes.Cards.Minion;
 
 import Classes.Cards.Card;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.util.ArrayList;
 
@@ -10,6 +11,8 @@ public abstract class Minion extends Card {
     private int attackDamage;
     private String description;
     private ArrayList<String> colors;
+    @JsonIgnore
+    private boolean frozen;
 
 
     public Minion(int mana, int health, int attackDamage, String description, ArrayList<String> colors, String name) {
@@ -61,6 +64,13 @@ public abstract class Minion extends Card {
         this.colors = colors;
     }
 
+    public boolean isFrozen() {
+        return frozen;
+    }
+
+    public void setFrozen(boolean frozen) {
+        this.frozen = frozen;
+    }
 
     @Override
     public String toString() {

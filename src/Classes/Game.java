@@ -1,6 +1,16 @@
 package Classes;
 
 import Classes.Action.*;
+import Classes.Cards.Card;
+import Classes.Cards.Minion.Minion;
+import Classes.Cards.Minion.Special.Disciple;
+import Classes.Cards.Minion.Special.Miraj;
+import Classes.Cards.Minion.Special.TheCursedOne;
+import Classes.Cards.Minion.Special.TheRipper;
+import Classes.Cards.Minion.Standard.Berserker;
+import Classes.Cards.Minion.Standard.Goliath;
+import Classes.Cards.Minion.Standard.Sentinel;
+import Classes.Cards.Minion.Standard.Warden;
 import fileio.ActionsInput;
 
 import java.util.ArrayList;
@@ -11,12 +21,14 @@ public class Game {
 
     private int currentPlayerIdx = startGame.getStartingPlayer();
 
-    private int playerTurn;
     private Player playerOne;
     private Player playerTwo;
 
     private Decks playingPlayerOne;
     private Decks playingPlayerTwo;
+
+    private Minion[][] table = new Minion[4][5];
+    private int addedMana = 2;
 
     public Decks getPlayingPlayerOne() {
         return playingPlayerOne;
@@ -86,6 +98,37 @@ public class Game {
             }
     }
 
+    public int findSpot(Card[] row) {
+        int spot = -1;
+        for(int i = 0; i < row.length; i++)
+            if(row[i] == null) {
+                spot = i;
+                break;
+            }
+        return spot;
+    }
+
+    public void setCardInTable(Minion card, int x, int y) {
+        if(card instanceof Berserker)
+            table[x][y] = new Berserker(card.getMana(), card.getHealth(), card.getAttackDamage(), card.getDescription(), card.getColors(), card.getName());
+        if(card instanceof Goliath)
+            table[x][y] = new Goliath(card.getMana(), card.getHealth(), card.getAttackDamage(), card.getDescription(), card.getColors(), card.getName());
+        if(card instanceof Sentinel)
+            table[x][y] = new Sentinel(card.getMana(), card.getHealth(), card.getAttackDamage(), card.getDescription(), card.getColors(), card.getName());
+        if(card instanceof Warden)
+            table[x][y] = new Warden(card.getMana(), card.getHealth(), card.getAttackDamage(), card.getDescription(), card.getColors(), card.getName());
+        if(card instanceof Disciple)
+            table[x][y] = new Disciple(card.getMana(), card.getHealth(), card.getDescription(), card.getColors(), card.getName());
+        if(card instanceof Miraj)
+            table[x][y] = new Miraj(card.getMana(), card.getHealth(), card.getAttackDamage(), card.getDescription(), card.getColors(), card.getName());
+        if(card instanceof TheCursedOne)
+            table[x][y] = new TheCursedOne(card.getMana(), card.getHealth(), card.getDescription(), card.getColors(), card.getName());
+        if(card instanceof TheRipper)
+            table[x][y] = new TheRipper(card.getMana(), card.getHealth(), card.getAttackDamage(), card.getDescription(), card.getColors(), card.getName());
+
+        table[x][y] = card;
+    }
+
     public int getCurrentPlayerIdx() {
         return currentPlayerIdx;
     }
@@ -94,13 +137,6 @@ public class Game {
         this.currentPlayerIdx = currentPlayerIdx;
     }
 
-    public int getPlayerTurn() {
-        return playerTurn;
-    }
-
-    public void setPlayerTurn(int playerTurn) {
-        this.playerTurn = playerTurn;
-    }
 
     public StartGame getStartGame() {
         return startGame;
@@ -116,5 +152,21 @@ public class Game {
 
     public void setActions(ArrayList<Action> actions) {
         this.actions = actions;
+    }
+
+    public Card[][] getTable() {
+        return table;
+    }
+
+    public void setTable(Minion[][] table) {
+        this.table = table;
+    }
+
+    public int getAddedMana() {
+        return addedMana;
+    }
+
+    public void setAddedMana(int addedMana) {
+        this.addedMana = addedMana;
     }
 }
